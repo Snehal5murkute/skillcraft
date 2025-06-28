@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- Quiz Heading Box -->
+    <div id="quizHeader" class="box">
+      <h1>Quiz Game</h1>
+    </div>
+
+    <!-- User Info Inputs -->
+    <div class="box" id="detailsBox">
+      <p>Please fill the below details:</p>
+      <label>Email: <input type="email" id="email" /></label><br><br>
+      <label>Student Name: <input type="text" id="name" /></label><br><br>
+      <label>Contact No: <input type="text" id="contact" /></label>
+    </div>
+
+    <!-- Technical Assessment Box -->
+    <div class="box" id="techBox">
+      <h2>Technical Assessment</h2>
+      <p id="bestMsg">All the Best!</p>
+    </div>
+
+
+    <!-- Quiz Form -->
+    <form id="quizForm">
+      <div id="questionsContainer"></div>
+      <p id="errorMsg" style="color:red; font-weight:bold; display:none;"></p>
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Thank You Box -->
+    <div class="box" id="scoreBox" style="display: none;">
+      <h3>Thank you for your response!</h3>
+      <button onclick="showScore()">View Score</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
